@@ -1,0 +1,25 @@
+# Ignore everything by default
+/*
+
+# Keep the ignore rules
+!/.gitignore
+
+# Allow traversal to the LED_GPIO project
+!/led/
+/led/*
+!/led/LED_GPIO/
+/led/LED_GPIO/*
+
+# Allow selected application files
+!/led/LED_GPIO/Core/
+/led/LED_GPIO/Core/*
+!/led/LED_GPIO/Core/Inc/
+/led/LED_GPIO/Core/Inc/*
+!/led/LED_GPIO/Core/Inc/main.h
+!/led/LED_GPIO/Core/Src/
+/led/LED_GPIO/Core/Src/*
+!/led/LED_GPIO/Core/Src/main.c
+
+# Allow documentation and debugger configuration
+!/led/LED_GPIO/stm32h750.cfg
+!/led/LED_GPIO/README.md
