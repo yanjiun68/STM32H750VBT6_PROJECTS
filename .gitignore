@@ -21,12 +21,16 @@
 !/led/LED_GPIO/Core/Src/main.c
 
 # Workspace 2\
+!/Digital_In/
+/Digital_In/*
+!/Digital_In/4x4_button_array/
+/Digital_In/4x4_button_array/*
 !/Digital_In/4x4_button_array/Core/
 /Digital_In/4x4_button_array/Core/*
-!/Digital_In/4x4_button_array/Core/Inc/
-/Digital_In/4x4_button_array/Core/Inc/*
 !/Digital_In/4x4_button_array/Core/Src/
-/Digital_In/4x4_button_array/Core/Src/*
+!/Digital_In/4x4_button_array/Core/Src/**
+!/Digital_In/4x4_button_array/code_architecture.md
+!/Digital_In/4x4_button_array/stm32h750.cfg
 
 
 
