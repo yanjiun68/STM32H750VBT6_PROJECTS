@@ -1,5 +1,9 @@
 # 4×4 Button Array Project Structure
 
+CubeMX owns peripheral handles and initialization in `Core/Src/main.c`, MSP setup in `stm32h7xx_hal_msp.c`, and interrupt handlers in `stm32h7xx_it.c`. The application functions and loop call live in preserved user-code sections of `main.c`; `keypad.c` and `keypad_uart.c` implement scanning, debounce, the event queue, and UART DMA delivery/recovery.
+
+The legacy `gpio.c`, `dma.c`, `usart.c`, and `tim.c` modules and their headers remain on disk for reference, but those sources are excluded from the CMake target. Do not compile them alongside the generated setup: they define duplicate peripheral handles and MSP functions.
+
 ```text
 4x4_button_array/
 ├── Core/
@@ -38,6 +42,10 @@
 ├── STM32H750xx_FLASH.ld
 ├── startup_stm32h750xx.s
 ├── 4x4_button_array.ioc
+├── tests/
+│   ├── mocks/stm32h7xx_hal.h
+│   └── test_keypad.c
+├── cubemx_strm.md
 └── stm32h750.cfg
 ```
 

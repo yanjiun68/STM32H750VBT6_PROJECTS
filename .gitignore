@@ -25,6 +25,9 @@
 /Digital_In/*
 !/Digital_In/4x4_button_array/
 /Digital_In/4x4_button_array/*
+!/Digital_In/4x4_button_array/tests/**
+!/Digital_In/4x4_button_array/cubemx_strm.md
+!/Digital_In/4x4_button_array/CMakeLists.txt
 !/Digital_In/4x4_button_array/Core/
 /Digital_In/4x4_button_array/Core/*
 !/Digital_In/4x4_button_array/Core/Src/
